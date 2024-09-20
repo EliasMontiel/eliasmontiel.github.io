@@ -1,0 +1,27 @@
+Elias Montiel and Jeb Davis
+
+1. Line 1: missing DOCTYPE -> I added one
+2. Line 4:  moved the lang to the correct html tag
+3. Line 7: missing head end tag -> I added one 
+4. Line 9: missing h1 end tag -> I added one 
+5. Line 11: missing p opening tag -> I added one 
+6. Line 19: it had a closing tag where an opening tag shoudl be -> I added an opeing tag 
+7. Line 24: it was an ul tag -> I made it an ol tag
+8. Line 26: missing p end tag -> I added one
+9. Line 28: was missing alt text -> I added one
+10. Line 28: the link to the image was wrong -> i made the "I lowercase and made it .jpeg"
+11. Line 30: chaned the last tag to an 'a' tag instead of the 'img'
+12. Line 39: added the correct 'td' closing tag
+13. Line 45: added an end 'table' tag
+14. Line 46: changed 'source' to 'src'
+15. Line 46: changed the .jpeg to .jpg
+16. Line 48: no p tags -> I added them
+17. Line 50: changed the color style so its formatted correctly -> style="color: lightgray;"
+18. Line 54: I closed the comment
+19. Line 56: closed with 'a' tag
+20. Line 56: correctly identified the purpose of the link
+21. Line 58: nested the 'em' tag correctly
+22. Line 58: changed the 'em' to 'u' to make it underlined
+23. Line 61: changed the 'li' tags to the correct 'dt' tags
+24. Line 62: changed the 'li' tags to the correct 'dd' tags
+25. Line 64: changed the closing 'h3' to the correct closing 'h2' tag 

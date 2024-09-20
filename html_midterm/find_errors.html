@@ -1,67 +1,70 @@
-<html>
-<head>
-    
-    <html language="en">
-    
-    <title>Error-Filled Page</title>
-    
-<body>
-    <h1>Welcome to My Error-Filled Page
-    
-    This is a paragraph.</p>
-    
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-        </li>Item 6</li>
-        <li>Item 7</li>
-        <li>Item 8</li>
-        <li>Item 9</li>
-        <li>Item 10</li>
-    </ul>
+<!DOCTYPE html> <!-- missing DOCTYPE -> I added one -->
+<html lang="en"> <!-- moved the lang to the correct html tag -->
+    <head>
+            <title>Error-Filled Page</title>
+    </head> <!-- missing head end tag -> I added one -->
 
-    <p>This is another paragraph.
-    
-    <img src="Image.png">
+    <body>
+        <h1>Welcome to My Error-Filled Page</h1> <!-- missing h1 end tag -> I added one -->
+        
+        <p>This is a paragraph.</p> <!-- missing p opening tag -> I added one -->
+        
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li> <!-- it had a closing tag where an opening tag shoudl be -> I added an opeing tag -->
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ol> <!-- it was an ul tag -> I made it an ol tag -->
 
-    <a href="find_errors_2.html" target="_blank">Click me!</img>
+        <p>This is another paragraph.</p> <!-- missing p end tag -> I added one -->
+        
+        <img src="image.jpg" alt="alt text"> <!-- was missing alt text -> I added one --> 
+        <!-- the link to the image was wrong -> i made the "I lowercase and made it .jpeg" -->
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>25<td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>30</td>
-        </tr>
-    
-    <img source="error.jpeg" alt="Error Image">
+        <a href="find_errors_2.html" target="_blank">Click me!</a> <!-- chaned the last tag to an 'a' tag instead of the 'img' -->
 
-    This is a paragraph with strikethrough text.
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td> <!-- added the correct 'td' closing tag -->
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>30</td>
+            </tr>
+        </table> <!-- added an end 'table' tag -->
+        
+        <img src="error.jpg" alt="Error Image"> <!-- changed 'source' to 'src' -->       <!-- changed the .jpeg to .jpg -->
 
-    <p bgcolor="lightgray">Text</p>
+        <p>This is a paragraph with strikethrough text.</p> <!-- no p tags -> I added them -->
 
-    <input type="button" value="Click me">
+        <p style="color: lightgray;">Text</p> <!-- changed the color style so its formatted correctly -> style="color: lightgray;" -->
 
-    <!-- This is a comment
+        <input type="button" value="Click me"> 
 
-    <a href="#">Link 
+        <!-- This is a comment -->         <!-- I closed the comment -->
 
-    <p><em>Underlined text</p></em>
+        <a href="#">Back to the top</a> <!-- closed with 'a' tag -->           <!-- correctly identified the purpose of the link -->
 
-    <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
-    </dl>
-    <h2 style="color:Tomato;">Hello World<h3>
-</body>
-</html>
-<!-- 25 errors on this page-->
+        <p><em>Underlined text</em></p> <!-- nested the 'em' tag correctly -->    <!-- changed the 'em' to 'u' to make it underlined -->
+
+        <dl>
+            <dt>Descriptive Item Title</dt> <!-- changed the 'li' tags to the correct 'dt' tags -->
+            <dd>Descriptive Item Text</dd> <!-- changed the 'li' tags to the correct 'dd' tags  -->
+        </dl>
+        
+        <h2 style="color:Tomato;">Hello World</h2> <!-- changed the closing 'h3' to the correct closing 'h2' tag -->
+
+    </body>
+    </html>
+    <!-- 25 errors on this page -->
