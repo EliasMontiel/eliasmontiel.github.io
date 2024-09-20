@@ -1,5 +1,32 @@
 Elias Montiel and Jeb Davis
 
+
+// find_errors_2.html
+
+1. html open tag missing
+2. lang = "en" missing in html tag
+3. header 1 tag incorrectly placed in head section
+4. no closin head tag
+5. body tag has no closing carrot
+6. html open tag incorrectly placed in body tag section
+7. no div closing tag
+8. no closing strong tag
+9. no closing <p> tag in the div section
+10. href used instead of src in the img tag
+11. image link typed incorrectly
+12. img tag missing alt
+13. no open h2 tag
+14. no opening <p> tag
+15. this is not a comment. comment tags were done incorrectly
+16. no body closing tag
+17. html not spelled correctly
+
+
+
+
+
+// find_errors.html
+
 1. Line 1: missing DOCTYPE -> I added one
 2. Line 4:  moved the lang to the correct html tag
 3. Line 7: missing head end tag -> I added one 
