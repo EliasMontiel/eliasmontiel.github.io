@@ -1,16 +1,13 @@
-#include <iostream>
-using namespace std;
+#include<iostream>
 
-void test(int value) {
-      value = value* 5;
+int main() {
+   int x = 10;
+   int *p = new int;
 
-     cout << &value << endl;
+   p = &x;
 
-}
-
-int main () {
-      int value = 15 ;
-      test(value);
-
-     cout << &value << endl;
+   std::cout << "x = " << *p << std::endl;
+   delete p;
+   
+   return 0;
 }

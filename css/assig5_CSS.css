@@ -81,7 +81,7 @@ html {
     width: 35em;
     height: 22em;
     margin: 5em auto;
-    background-color: red;
+    background-color: rgb(195, 0, 255);
     border: 0.2em solid black;
     border-radius: 1.5em;
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -109,11 +109,11 @@ html {
 
   .card2 article {
     height: 12em;
-    background-color: rgb(11, 170, 239)
+    background-color: rgb(255, 255, 255)
   }
   .card2 article p{
     padding: 1em;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   .card2 article img {
     max-height: 100%;
