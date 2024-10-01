@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #ccc;
+    /* background: linear-gradient(#ccc 25%, white 75%, #ccc); */
+    background-image: linear-gradient(
+        180deg,
+        hsl(0deg 0% 80%) 0%,
+        hsl(0deg 0% 96%) 9%,
+        hsl(0deg 0% 100%) 65%,
+        hsl(0deg 0% 100%) 65%,
+        hsl(0deg 0% 96%) 91%,
+        hsl(0deg 0% 80%) 100%
+    );
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  address {
+    position: absolute;
+    bottom: -120px;
+    right: 430px;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-image: url(/img/logo.png);
+    filter: drop-shadow(8px 15px 7px #000000);
+  }
+  
+  /* Your CSS below here */ 
+
+  #top_image{
+    position: relative;
+    top: 0px;
+    border-top: solid 2px red;
+  }
+  #logo{
+    position: relative;
+    top: -130px;
+    left: -360px;
+  }
+  #bottom_image{
+    position: relative;
+    bottom: 0px;
+    border-bottom: solid 2px red;
+  }
+
