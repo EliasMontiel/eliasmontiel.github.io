@@ -1,0 +1,49 @@
+
+html {
+    height: 100%;
+    margin: 0;
+}
+  
+body {
+    background-image: url("/img/cycling_photo.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+    
+#overlay1 { 
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    width: 20vw; /* 50% of the viewport width */
+    height: 20vh; /* 30% of the viewport height */
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid navy;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#overlay2 { 
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 20vw; /* 50% of the viewport width */
+    height: 10vh; /* 30% of the viewport height */
+    background: linear-gradient(green, yellow, black, red, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    border: 2px solid navy;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
