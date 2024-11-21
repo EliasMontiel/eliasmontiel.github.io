@@ -2,7 +2,23 @@
     "projects": [{
         "name": "Hello",
         "subdomain": "Testing",
+        "category": "solo",
         "subtitle": "subtitle description",
-        "abstract": "the main text"
+        "abstract": "the main text",
+        "images": ["/JS_Project/images/cat.png"]
+    },{
+        "name": "2 Hello",
+        "subdomain": "2 Testing",
+        "category": "team",
+        "subtitle": "2 subtitle description",
+        "abstract": "2 the main text",
+        "images": ["/JS_Project/images/chick.png"]
+    },{
+        "name": "3 Hello",
+        "subdomain": "3 Testing",
+        "category": "solo",
+        "subtitle": "3 subtitle description",
+        "abstract": "3 the main text",
+        "images": ["/JS_Project/images/kitty.png"]
     }]
 }
