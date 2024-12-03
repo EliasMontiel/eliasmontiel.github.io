@@ -1,3 +1,98 @@
+/* nav bar start */
+:root {
+    --underline-height: .5em;
+  }
+  
+  body, html {
+    height: 100%;
+    margin:0;
+    overflow-x: hidden;
+    background-color: white;
+}
+  
+  nav {
+    position: relative;
+    white-space: nowrap;
+    background: white;
+    padding: var(--underline-height) ;
+    margin: 0em 0;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.1);
+  }
+
+    ul{
+        list-style: none;
+        display:flex;
+        background-color: white;
+        margin:0;
+        /* padding:20px; */
+        justify-content: center;
+    }
+
+  
+  ul li {
+    display: inline-block;
+    z-index: 10;
+    /* width: 20%; */
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+  }
+  .btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  .btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+  }
+  .btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: black;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  .btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: white;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
+
+
+  
+/* nav bar end */
+
+
+
 #projects{
     display: flex;
     flex-direction: column;
@@ -34,3 +129,50 @@
 #buttons button{
     margin: 10px;
 }
+
+
+
+.hero-image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url("/JS_Project/images/expanded_boat_jpg.jpg");
+  
+    /* height */ 
+    height: 90%;
+  
+    /* Position */
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 1em;
+  }
+  .hero-text {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Open Sans";
+  }
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container > div {
+  background-color: gray;
+  width: 50%;
+  margin-bottom: 1em;
+  text-align: center;
+  line-height: 40em;
+  /* font-size: 30px; */
+  }
+
+  
+
+  
