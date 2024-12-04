@@ -144,7 +144,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
   }
   .hero-text {
     text-align: center;
@@ -157,6 +157,7 @@
     font-family: "Open Sans";
   }
 
+
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -165,12 +166,31 @@
 }
 
 .flex-container > div {
-  background-color: gray;
+  background-color: white;
   width: 50%;
   margin-bottom: 1em;
-  text-align: center;
-  line-height: 40em;
-  /* font-size: 30px; */
+  line-height: 1em;
+  }
+
+  .portrait{
+    flex-basis: 30%;
+    margin-left: 1em;
+    background-image: url("/JS_Project/images/AE71A83F-7073-40F9-BC1E-A058888CC2E8_1_105_c.jpeg");
+
+    height: 90%;
+  
+
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+  }
+  .about-me{
+    height: 90%;
+    flex: auto;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   
