@@ -1,24 +1,24 @@
 {
     "projects": [{
-        "name": "Hello",
+        "name": "Colorado Symphony Orchestra",
         "subdomain": "Testing",
-        "category": "solo",
+        "category": "team",
         "subtitle": "subtitle description",
         "abstract": "the main text",
-        "images": ["/JS_Project/images/cat.png"]
+        "images": ["/JS_Project/images/Screenshot 2024-12-05 at 11.15.23 AM.png"]
     },{
-        "name": "2 Hello",
+        "name": "Comic Generator",
         "subdomain": "2 Testing",
-        "category": "team",
+        "category": "solo",
         "subtitle": "2 subtitle description",
         "abstract": "2 the main text",
-        "images": ["/JS_Project/images/chick.png"]
+        "images": ["/JS_Project/images/Screenshot 2024-12-05 at 11.14.25 AM.png"]
     },{
-        "name": "3 Hello",
+        "name": "Story Generator",
         "subdomain": "3 Testing",
         "category": "solo",
         "subtitle": "3 subtitle description",
         "abstract": "3 the main text",
-        "images": ["/JS_Project/images/kitty.png"]
+        "images": ["/JS_Project/images/Screenshot 2024-12-05 at 11.14.55 AM.png"]
     }]
 }
