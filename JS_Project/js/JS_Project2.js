@@ -1,5 +1,7 @@
-let subdomain = window.location.href.slice(window.location.href.lastIndexOf("/")+1, window.location.href.lastIndexOf("."));
+let subdomain = window.location.href.slice(window.location.href.lastIndexOf("/")-9, window.location.href.lastIndexOf("."));
+// the minus 9 is because of the "showcases" folder
 console.log(subdomain);
+
 
 fetch('/JS_Project/projects.json')
     .then(response =>{
@@ -26,5 +28,8 @@ function findProjectInJSON(projects){
 
 function buildPage(project){
     console.log(project);
-    document.getElementById("project").innerHTML += `<h1>${project.name}</h1>`;
+    document.getElementById("project").innerHTML += `
+    <h1>${project.name}</h1>
+    <a href="${project.link}" target="_blank">Link to Website</a>
+    `;
 }

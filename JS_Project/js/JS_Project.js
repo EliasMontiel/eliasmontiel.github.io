@@ -160,7 +160,6 @@ function parseData(data) {
           <div class="row project" id="${project.subdomain}">
           <div class="description">
               <h2>${project.name}</h2>
-              <p class="subtitle">${project.subtitle}</p>
               <p>${project.abstract}</p>
             </div>
             <div class="projimg"><img src="${project.images}" alt="${project.name}"></div>

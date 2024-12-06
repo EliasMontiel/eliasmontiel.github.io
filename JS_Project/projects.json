@@ -1,24 +1,24 @@
 {
     "projects": [{
         "name": "Colorado Symphony Orchestra",
-        "subdomain": "Testing",
+        "subdomain": "showcases/CSO",
+        "link": "https://eliasmontiel.github.io/css_project_one/main_page.html",
         "category": "team",
-        "subtitle": "subtitle description",
-        "abstract": "the main text",
+        "abstract": "Designed a website for the Colorado Symphony Orchestra with a small 4 person team",
         "images": ["/JS_Project/images/Screenshot 2024-12-05 at 11.15.23 AM.png"]
     },{
-        "name": "Comic Generator",
-        "subdomain": "2 Testing",
+        "name": "Comic Generator",  
+        "subdomain": "showcases/Comic",
+        "link": "https://eliasmontiel.github.io//Assignment_12/xkcd_machine.html",
         "category": "solo",
-        "subtitle": "2 subtitle description",
-        "abstract": "2 the main text",
+        "abstract": "Created a Comic Generator from an open comic API",
         "images": ["/JS_Project/images/Screenshot 2024-12-05 at 11.14.25 AM.png"]
     },{
         "name": "Story Generator",
-        "subdomain": "3 Testing",
+        "subdomain": "showcases/Story",
+        "link": "https://eliasmontiel.github.io//Assigment_10/wa10.html",
         "category": "solo",
-        "subtitle": "3 subtitle description",
-        "abstract": "3 the main text",
+        "abstract": "Made a generator that creates a story with a name that you give",
         "images": ["/JS_Project/images/Screenshot 2024-12-05 at 11.14.55 AM.png"]
     }]
 }
