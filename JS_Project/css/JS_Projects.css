@@ -172,7 +172,7 @@ button {
   }
   
   button:hover {
-    border: 1px solid white;
+    border: 3px solid white;
   }
   
   button:active {
