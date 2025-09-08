@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio • Birds</title>
+
+  <!-- Reuse your existing stylesheet -->
+  <link rel="stylesheet" href="/JS_Project/css/photo.css">
+
+  <!-- Same fonts as your main page -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV (unchanged) -->
+  <nav class="nav">
+    <ul>
+      <li><a href="/JS_Project/home.html" class="btn-flip" data-back="Home" data-front="Home"></a></li>
+      <li><a href="/JS_Project/code.html" class="btn-flip" data-back="Code" data-front="Code"></a></li>
+      <li><a href="/JS_Project/film.html" class="btn-flip" data-back="Film" data-front="Film"></a></li>
+      <li><a href="/JS_Project/cycling.html" class="btn-flip" data-back="Cycling" data-front="Cycling"></a></li>
+      <li><a href="/JS_Project/photography.html" class="btn-flip" data-back="Photography" data-front="Photography"></a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Birds</h1>
+  </header>
+
+  <!-- OPTIONAL: a tiny breadcrumb/back link -->
+  <section style="max-width:1500px;margin:0 auto;padding:0 10px 6px;">
+    <a href="/JS_Project/photography.html" style="text-decoration:none;color:#323237;font-family:'Lato',sans-serif;">
+      ← Back to Albums
+    </a>
+  </section>
+
+  <!-- ALBUM GALLERY (uses your grid) -->
+  <section class="album-photos" style="max-width:1500px;margin:0 auto;">
+    <div class="gallery">
+      <!-- Use whatever images you want for this album. The classes below
+           are your existing layout helpers: v-stretch / h-stretch / big-stretch -->
+      <div class="big-stretch"><img src="/JS_Project/photos/birds.jpeg" alt="Birds in flight"></div>
+      <div class="v-stretch"><img src="/JS_Project/photos/crows.jpeg" alt="Perched crows"></div>
+      <div><img src="/JS_Project/photos/green.jpeg" alt="Green field habitat"></div>
+      <div><img src="/JS_Project/photos/stone.jpeg" alt="Bird on stone"></div>
+      <div class="h-stretch"><img src="/JS_Project/photos/train.jpeg" alt="Birds near tracks"></div>
+      <div><img src="/JS_Project/photos/plane.JPG" alt="Birds with plane in sky"></div>
+      <div class="v-stretch"><img src="/JS_Project/photos/windmill_orange.jpeg" alt="Birds and orange windmill"></div>
+      <div class="v-stretch"><img src="/JS_Project/photos/windmill_blue.jpeg" alt="Birds and blue windmill"></div>
+      <div><img src="/JS_Project/photos/windmill_B&W.jpeg" alt="Birds, windmill in black and white"></div>
+      <div class="h-stretch"><img src="/JS_Project/photos/Trevor_2.jpg" alt="Environmental portrait (album filler)"></div>
+      <div><img src="/JS_Project/photos/phillips.jpeg" alt="Bird statue (album filler)"></div>
+      <div><img src="/JS_Project/photos/scooter.jpeg" alt="Urban scene (album filler)"></div>
+      <!-- Add/remove images as needed. Keep or change stretch classes to taste. -->
+    </div>
+  </section>
+
+  <!-- (Optional) album-specific script(s) -->
+  <script src="/JS_Project/js/JS_Project.js"></script>
+</body>
+</html>
