@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Speech Controlled Grid</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: repeat(5, 60px);
+        grid-template-rows: repeat(5, 60px);
+        gap: 5px;
+        margin-top: 20px;
+      }
+      .cell {
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .ball {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: red;
+      }
+    </style>
+    <script>
+      window.SpeechRecognition =
+        window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+      recognition.lang = "en-US"; // switch to "es-ES" for Spanish
+      recognition.interimResults = true;
+      recognition.continuous = true;
+
+      const gridSize = 5;
+      let x = 2; // starting col
+      let y = 2; // starting row
+
+      window.onload = () => {
+        createGrid();
+        updateBall();
+
+        recognition.onresult = (event) => {
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            let transcript = event.results[i][0].transcript.toLowerCase();
+            if (event.results[i].isFinal) {
+              processCommand(transcript);
+            }
+          }
+        };
+        recognition.start();
+      };
+
+      function createGrid() {
+        const grid = document.getElementById("grid");
+        grid.innerHTML = "";
+        for (let i = 0; i < gridSize * gridSize; i++) {
+          const cell = document.createElement("div");
+          cell.className = "cell";
+          grid.appendChild(cell);
+        }
+      }
+
+      function updateBall() {
+        const cells = document.querySelectorAll(".cell");
+        cells.forEach((c) => (c.innerHTML = ""));
+        const index = y * gridSize + x;
+        const ball = document.createElement("div");
+        ball.className = "ball";
+        cells[index].appendChild(ball);
+      }
+
+      function processCommand(command) {
+        // Replace words for numbers if spoken as words
+        const numberWords = {
+          one: 1,
+          two: 2,
+          three: 3,
+          four: 4,
+          five: 5,
+        };
+        command = command.replace(/\b(one|two|three|four|five)\b/g, (m) => numberWords[m]);
+
+        // Regex for "[number] direction" OR just "direction"
+        const regex = /(\d+)?\s*(left|right|up|down)/g;
+        let match;
+        while ((match = regex.exec(command)) !== null) {
+          let amount = match[1] ? parseInt(match[1]) : 1;
+          let direction = match[2];
+          moveBall(direction, amount);
+        }
+        updateBall();
+      }
+
+      function moveBall(direction, amount) {
+        if (direction === "left") x = Math.max(0, x - amount);
+        if (direction === "right") x = Math.min(gridSize - 1, x + amount);
+        if (direction === "up") y = Math.max(0, y - amount);
+        if (direction === "down") y = Math.min(gridSize - 1, y + amount);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Speech Controlled Ball</h2>
+    <div id="grid"></div>
+  </body>
+</html>
