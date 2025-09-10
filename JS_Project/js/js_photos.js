@@ -5,24 +5,24 @@
 (function () {
     const albums = [
       {
-        title: "Album 1",
+        title: "Random",
         href: "/JS_Project/album1.html",
-        cover: "/JS_Project/photos/train.jpeg",
+        cover: "/JS_Project/photos/Album1/train.jpeg",
       },
       {
-        title: "Album 2",
-        href: "/JS_Project/album1.html",
-        cover: "/JS_Project/photos/stone.jpeg",
+        title: "CU MTB RACE",
+        href: "/JS_Project/album2.html",
+        cover: "/JS_Project/photos/Album2/sydney.jpg",
       },
       {
-        title: "Album 2",
+        title: "Album 3",
         href: "/JS_Project/album1.html",
-        cover: "/JS_Project/photos/stone.jpeg",
+        cover: "/JS_Project/photos/Album1/stone.jpeg",
       },
       {
-        title: "Album 2",
+        title: "Album 4",
         href: "/JS_Project/album1.html",
-        cover: "/JS_Project/photos/stone.jpeg",
+        cover: "/JS_Project/photos/Album1/stone.jpeg",
       },
       
 
